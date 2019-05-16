@@ -41,7 +41,6 @@ public class TweetCollectorApplication {
     }
     public static void main(String[] args) throws Exception {
         start();
-        System.out.println("Main");
     }
 
 }

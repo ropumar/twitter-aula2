@@ -21,13 +21,12 @@ public class TweetManager implements LifecycleManager , Serializable {
 
         twitter = new TwitterStreamFactory(configurationBuilder.build()).getInstance();
         twitter.addListener(listener);
-        twitter.filter("Pumar");
-        System.out.println("Teste start");
+        twitter.filter("Clojure");
     }
 
     @Override
     public void stop() {
+        twitter.cleanUp();
         twitter.clearListeners();
-        twitter.shutdown();
     }
 }

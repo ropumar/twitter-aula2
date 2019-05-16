@@ -41,7 +41,6 @@ public class MyStatusListener implements StatusListener {
 
     public void displayTweet (Tweet tweet){
         System.out.println(tweet.getName() + tweet.getMessage() + tweet.getDate());
-        System.out.println("Teste");
     }
 }
 
